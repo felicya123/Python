@@ -1,0 +1,9 @@
+hap=0
+input_n = map(int, input().split())
+arr = list(map(int,input().split()))
+set_a = set(map(int,input().split()))
+set_b = set(map(int,input().split()))
+for i in arr:
+    if(i in set_a):hap+=1
+    if(i in set_b):hap-=1
+print(hap)
